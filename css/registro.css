@@ -1,0 +1,165 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", sans-serif;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 3vw;
+  box-shadow: 0px 1px 20px rgba(139, 139, 139, 0.65);
+  position: relative;
+}
+
+section.destaque {
+  position: sticky;
+  top: 0;
+  background-color: #C2185B;
+  padding: 16px;
+  text-align: center;
+  color: #FFF;
+}
+
+.logo {
+  width: clamp(75px, 15%, 230px);
+}
+
+.nav__hamburger--enabled:hover {
+  cursor: pointer;
+}
+
+header nav {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: #fff;
+  padding: 5px 10px;
+  border-top: rgba(139, 139, 139, 0.65) 0.5px solid;
+  opacity: 0;
+  transition: all 0.5s ease;
+}
+
+header nav a {
+  text-decoration: none;
+  color: #777777;
+}
+
+main {
+  display: flex;
+  column-gap: 10px;
+  max-width: 960px;
+  margin: 20px auto;
+}
+
+main section {
+    width: 50%;
+}
+
+form label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+form label span {
+    font-size: 0.8rem;
+}
+
+form label input, form label select {
+    display: block;
+    width: 80%;
+}
+
+form label input[type="checkbox"],
+form label input[type="radio"] {
+    display: inline;
+    width: auto;
+}
+
+form label input[type="file"] {
+  display: none;
+}
+
+form label input[type="file"] + span {
+  cursor: pointer;
+  background-color: #C2185B;
+  padding: 5px 20px;
+  color: white;
+  border-radius: 4px;
+  box-shadow: 2px 2px 4px grey;
+}
+
+form label input[type="file"] + span:hover {
+  transition: color  .5s;
+  transition: background-color  .5s;
+  color: #C2185B;
+  background-color: #FFF;
+}
+
+button {
+    background-color: #C2185B;
+    color: #FFF;
+    padding: 5px 20px;
+    border-radius: 4px;
+    outline: none;
+    border: none;
+    box-shadow: 2px 2px 4px grey;
+  }
+  
+  button:hover {
+  transition: color  .5s;
+  transition: background-color  .5s;
+  color: #C2185B;
+  background-color: #FFF;
+}
+
+footer {
+  width: 100%;
+  background-color: #c2185b;
+  padding: 2%;
+}
+
+footer > section {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1280px;
+  color: #fff;
+  font-size: clamp(0.6rem, 1.2vw, 1.5rem);
+}
+
+footer a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.footer__logo {
+  display: flex;
+  flex-direction: column;
+  width: 35vw;
+  max-width: 230px;
+}
+
+.footer__logo > img {
+  width: 75%;
+}
+
+.footer__cat--disabled {
+  display: none;
+}
+
+.footer__list {
+  padding: 0;
+  list-style-type: none;
+}

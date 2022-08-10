@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/registro.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700;800&display=swap" rel="stylesheet">
+    <script defer src="./script.js"></script>
+    <title>Shoe Store</title>
+</head>
+
+<body>
+    <header>
+        <img src="./img/logo.png" alt="Logo" class="logo logo--header">
+        <img src="./img/hamburguer.svg" alt="Menu hamburguer" class="nav__hamburger--enabled">
+        <nav class="nav">
+            <a href="#" class="nav__link--disabled">TODOS OS PRODUTOS /</a>
+            <a href="#" class="nav__link--disabled">COLEÇÕES /</a>
+            <a href="#" class="nav__link--disabled">OUTLET</a>
+        </nav>
+    </header>
+
+    <section class="destaque">
+        Só nesse mês de aniversário, frete grátis para todo o Brasil!!!
+    </section>
+
+    <main class="container">
+        <section>
+            <h1>Faça parte do nosso time</h1>
+            <form action="" method="GET">
+                <label>
+                    <span>Nome</span>
+                    <input type="text" name="nome">
+                </label>
+                <label>
+                    <span>Email</span>
+                    <input type="email" name="email">
+                </label>
+                <label>
+                    <span>Telefone</span>
+                    <input type="tel" name="telefone">
+                </label>
+                <label>
+                    <span>Departamentos</span>
+                    <select name="departamento" id="departamentos">
+                        <option value="" selected disabled>Selecione um departamento</option>
+                        <option value="prog">Programação</option>
+                        <option value="vend">Vendas</option>
+                        <option value="mkt">Marketing</option>
+
+                    </select>
+                </label>
+                <div>
+                    <h3>Disponibilidade</h3>
+                    <label>
+                        <input type="checkbox" name="disp_integral" id="">
+                        <span>Integral (8h)</span>
+                    </label>
+                    <label>
+                        <input type="checkbox" name="disp_meioperiodo" id="">
+                        <span>Meio Período (4h)</span>
+                    </label>
+                    <label>
+                        <input type="checkbox" name="disp_freelancer" id="">
+                        <span>Freelancer</span>
+                    </label>
+                </div>
+                <div>
+                    <h3>Forma preferencial de contato</h3>
+                    <label>
+                        <input type="radio" value="whatsapp" name="formaDeContato">
+                        <span>Whatsapp</span>
+                    </label>
+                    <label>
+                        <input type="radio" value="email" name="formaDeContato">
+                        <span>Email</span>
+                    </label>
+                    <label>
+                        <input type="radio" value="telefone" name="formaDeContato">
+                        <span>Telefone</span>
+                    </label>
+                    <label>
+                        <input type="file" name="arquivoCurriculo">
+                        <span>Arquivo PDF com seu currículo</span>
+                    </label>
+                </div>
+                <button type="submit">
+                    Enviar
+                </button>
+            </form>
+        </section>
+
+        <section>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio dolor, consequuntur error tempore
+                nesciunt velit neque quibusdam est, assumenda, iure ducimus voluptatibus omnis! Reiciendis voluptatibus
+                numquam qui labore, voluptates odit?
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio dolor, consequuntur error tempore
+                nesciunt velit neque quibusdam est, assumenda, iure ducimus voluptatibus omnis! Reiciendis voluptatibus
+                numquam qui labore, voluptates odit?
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio dolor, consequuntur error tempore
+                nesciunt velit neque quibusdam est, assumenda, iure ducimus voluptatibus omnis! Reiciendis voluptatibus
+                numquam qui labore, voluptates odit?
+            </p>
+            <p></p>
+            <p></p>
+        </section>
+
+    </main>
+
+    <footer>
+        <section>
+
+            <article class="footer__logo">
+                <img src="./img/logo-white.png" alt="Logo" class="logo logo--footer">
+                <span>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia est nesciunt blanditiis
+                    animi.</span>
+            </article>
+            <article class="footer__cat--disabled">
+
+                <ul class="footer__list">
+                    <li id="ul__title">categorias</li>
+                    <li>sandálias</li>
+                    <li>botas</li>
+                    <li>tẽnis</li>
+                    <li>oxford</li>
+                    <li>coturnos</li>
+                </ul>
+            </article>
+            <article class="institucional">
+                <ul class="footer__list">
+                    <li id="ul__title">institucional</li>
+                    <li>sobre nós</li>
+                    <li>perguntas frequentes</li>
+                    <li>política de privacidade</li>
+                    <li>rastreamento de pedidos</li>
+                    <li>
+                        <a href="#">
+                            trabalhe conosco
+                        </a>
+                    </li>
+                    <li>contato</li>
+                </ul>
+            </article>
+
+        </section>
+
+    </footer>
+
+</body>
+
+</html>
